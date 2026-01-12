@@ -1,0 +1,1 @@
+# Loja-Veloz-Plataforma-de-Pedidos-em-Microsservi-os
