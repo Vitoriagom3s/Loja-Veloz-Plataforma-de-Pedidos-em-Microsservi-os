@@ -1,0 +1,9 @@
+provider "kubernetes" {
+  config_path = "~/.kube/config"
+}
+
+resource "kubernetes_namespace" "loja" {
+  metadata {
+    name = "loja-veloz"
+  }
+}
