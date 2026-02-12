@@ -5,11 +5,32 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
+  build-test-push:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
 
-      - name: Build Docker
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v3
+
+      - name: Configurar Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Login no Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+
+      - name: Build da imagem
         run: |
-          docker build -t pedidos ./services/pedidos
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/pedidos:latest ./services/pedidos
+
+      - name: Executar testes
+        run: |
+          echo "Executando testes automatizados..."
+          # aqui você pode colocar pytest, npm test, etc.
+
+      - name: Push da imagem para o Docker Hub
+        run: |
+          docker push ${{ secrets.DOCKER_USERNAME }}/pedidos:latest
+
