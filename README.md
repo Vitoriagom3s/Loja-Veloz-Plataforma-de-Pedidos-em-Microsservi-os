@@ -1,4 +1,5 @@
 # 🚀 Loja Veloz – Plataforma de Pedidos em Microsserviços
+<img width="1471" height="855" alt="image" src="https://github.com/user-attachments/assets/40ec9264-87f2-4243-863b-eaf8cb3c12f6" />
 
 Projeto prático de **Cloud DevOps** que demonstra a entrega contínua de uma aplicação de e-commerce baseada em microsserviços, desde o ambiente local com **Docker Compose** até a operação em **Kubernetes**, incluindo **CI/CD, observabilidade, escalabilidade automática e infraestrutura como código**.
 
@@ -22,7 +23,9 @@ A aplicação “Pedidos Veloz” é composta pelos seguintes microsserviços:
 - **Banco de Dados** – PostgreSQL
 - **Mensageria (conceitual)** – Eventos de domínio (ex.: `PedidoCriado`)
 
-📐 Estilo arquitetural: **Microserviços Cloud-Native**
+## 📐 Estilo arquitetural: **Microserviços Cloud-Native**
+<img width="1381" height="781" alt="image" src="https://github.com/user-attachments/assets/e575c029-dc87-4ee3-9d82-21f173ff2fec" />
+<img width="1330" height="723" alt="image" src="https://github.com/user-attachments/assets/fa934816-9b49-4f30-98ce-0a5b811f886f" />
 
 ---
 
