@@ -162,7 +162,7 @@ A infraestrutura é descrita com Terraform, garantindo:
 
 - Deploy, observabilidade e escalabilidade
 
-🔗 Link do vídeo: (inserir aqui)
+🔗 Link do vídeo: ((https://youtu.be/I5wLufTCw1s))
 
 ## ✅ Conclusão
 
